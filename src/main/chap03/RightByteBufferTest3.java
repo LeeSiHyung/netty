@@ -26,10 +26,27 @@ public class RightByteBufferTest3 {
 		assertEquals(1, firstBuffer.get());
 		assertEquals(1, firstBuffer.position());
 		
+		
 		assertEquals(2, firstBuffer.get());
 		assertEquals(2, firstBuffer.position());
 		
 		System.out.println(firstBuffer);
+		
+		firstBuffer.rewind();
+		System.out.println(firstBuffer.get());
+		System.out.println(firstBuffer.get());
+		System.out.println(firstBuffer.get());
+		System.out.println(firstBuffer.get());
+		System.out.println(firstBuffer.get());
+		System.out.println(firstBuffer.get());
+		System.out.println(firstBuffer.get());
+		System.out.println(firstBuffer.get());
+		System.out.println(firstBuffer.get());
+		System.out.println(firstBuffer.get());
+		System.out.println(firstBuffer.get());
+		// System.out.println(firstBuffer.get()); overflow
+		System.out.println(firstBuffer.position());
+
 		
 		
 	}

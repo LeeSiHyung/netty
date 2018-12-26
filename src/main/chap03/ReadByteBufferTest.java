@@ -28,14 +28,19 @@ public class ReadByteBufferTest {
 		
 		assertEquals(0, firstBuffer.position());
 		assertEquals(4, firstBuffer.limit());
+		assertEquals(0, firstBuffer.position());
+		
+		System.out.println(firstBuffer.get());
+		System.out.println(firstBuffer.get());
+		System.out.println(firstBuffer.get());
+		System.out.println(firstBuffer.get());
+		//System.out.println(firstBuffer.get()); overflow)
 		
 		System.out.println(firstBuffer.get(0));
 		System.out.println(firstBuffer.get(1));
 		System.out.println(firstBuffer.get(2));
 		System.out.println(firstBuffer.get(3));
 		
-		assertEquals(0, firstBuffer.position());
-		
-		
+		System.out.println(firstBuffer.position());
 	}
 }
